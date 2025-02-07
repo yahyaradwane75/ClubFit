@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+    scroll-behavior: smooth;
+}
+header{
+    background-color:black ;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.logo span{
+    color: red;
+    font-weight: bold;
+    font-size: 2.0rem;
+}
+.navigation a{
+    color: rgb(248, 243, 243);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: red;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(OIP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.titre1{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    opacity: 0;
+    animation: fadeBounce 8s ease-in-out infinite;
+
+
+}
+@keyframes fadeZoomSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+
+.titre1 h1{
+    color: rgb(248, 247, 247);
+    font-size: 70px;
+}
+.titre1 span{
+    color: red;
+    font-weight: bold;
+    font-size: 70px;
+}
+.btn{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    border: 0.5px  white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: rgb(249, 151, 4);
+    transition: 0.8s all;
+}
+
+.btn:hover{
+    background-color: rgb(246, 243, 243);
+    color: rgb(11, 11, 11);
+    border: none;
+}
+.titre2{
+    display: flex;
+    justify-content: center;
+    color: #f78408;
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap ;
+}
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.05);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card{
+    background-color: #fff;
+    width: 30em;
+    height: 30em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 40%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.img{
+    width: 430px;
+}
+.info h3{
+    color: #f40909;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px;
+    font-weight: 900;
+}
+.info p{
+    text-align: justify;
+    margin: 10px;
+}
+#proposdenous{
+    margin-bottom: 20px;
+    height: 680px;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(track-and-football-field-venue-at-hgh-school-clear-day.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo2{
+    color: rgb(245, 242, 242);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-left: 100px;
+    padding-bottom: 10px;
+}
+.logo2 span{
+    color: red;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.content1 p{
+    color: #f48d07;
+    margin-left: 160px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img1{
+    width: 430px;
+    float: right;
+    margin-right: 20px;
+}
+.content2 h2{
+    color: red;
+    text-decoration: underline;
+    padding: 10px 10px 10px 20px;
+}
+.content2 p{
+    color: #f8f5f5;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.cards-contact .image .img{
+    height: 100px;
+    width: 150px;
+}
+.cards-contact .card{
+    height: 200px;
+    width: 200px;
+    animation: fadeBounce 8s ease-in-out infinite;
+
+}
+.decor {
+    text-decoration: none;
+    color: black;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKETBALL</title>
+    <link rel="stylesheet" href="basketball.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nom" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Prenom" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <input list="browsers" placeholder="Categorie">
+                <datalist id="browsers">
+                    <option value="Minime">
+                    <option value="Cadet">
+                    <option value="Junior">
+                    <option value="Senior">
+                    <option value="Vètèrans">
+                </datalist>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" onclick="alert('inscription validèe')" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
